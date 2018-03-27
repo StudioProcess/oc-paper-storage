@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>oc-paper-storage</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- <script src="node_modules/three/build/three.js"></script>
+  <script src="node_modules/three/examples/js/controls/OrbitControls.js"></script> -->
+  
+  <script type="module">
+    fetch('alice30.txt')
+    .then(res => res.arrayBuffer())
+    .then(buf => new Uint8Array(buf))
+    .then(arr => {
+      let a = Math.ceil(Math.sqrt(arr.length));
+      console.log(arr.length + ' bytes');
+      console.log( a + ' px');
+      console.log( a/300*25.4 + ' mm @ 300 ppi');
+      
+      var canvas = document.querySelector('canvas');
+      canvas.width = a;
+      canvas.height = a;
+      var ctx = canvas.getContext('2d');
+      var img = ctx.createImageData(a, a);
+      console.log(img.data.length);
+      for (let i=0; i<arr.length; i++) {
+        let g = arr[i]; // gray value
+        // console.log(g);
+        img.data[i*4+0] = 255-g;
+        img.data[i*4+1] = 10;
+        img.data[i*4+2] = 50;
+        img.data[i*4+3] = 255;
+      }
+      // img.data.set(arr);
+      ctx.putImageData(img, 0, 0);
+      
+    });
+  </script>
+  
+  <canvas style="image-rendering:pixelated;"></canvas>
+</body>
+</html>

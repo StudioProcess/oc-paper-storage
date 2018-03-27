@@ -8,11 +8,11 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: grey;
+  background-color: WhiteSmoke;
   font-family: system-ui;
 }
 
 canvas {
-  width: 100% !important;
-  height: auto !important;
+  width: auto !important;
+  height: 85vh !important;
 }
