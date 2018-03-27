@@ -17,13 +17,13 @@
     function update_bpc() { app.bpc = Math.log2(app.lpc); }
     
     function update_inf() {
-      let b = app.page_w / app.mm * app.page_h / app.mm * app.bpc * app.ch;
+      let b = (app.page_w / app.mm) * (app.page_h / app.mm) * app.bpc * app.ch;
       app.inf = format_bits(b);
     }
     
     function format_bits(b) {
       if (b < 1024) return b.toFixed(2) + ' b';
-      b /= 1024; if (b < 1024) return b.toFixed(2) + ' B';
+      b /= 8; if (b < 1024) return b.toFixed(2) + ' B';
       b /= 1024; if (b < 1024) return b.toFixed(2) + ' KB';
       b /= 1024; if (b < 1024) return b.toFixed(2) + ' MB';
     }
