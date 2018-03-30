@@ -10,34 +10,59 @@
   <script src="node_modules/three/examples/js/controls/OrbitControls.js"></script> -->
   
   <script type="module">
-    fetch('alice30.txt')
-    .then(res => res.arrayBuffer())
-    .then(buf => new Uint8Array(buf))
-    .then(arr => {
-      let a = Math.ceil(Math.sqrt(arr.length));
-      console.log(arr.length + ' bytes');
-      console.log( a + ' px');
-      console.log( a/300*25.4 + ' mm @ 300 ppi');
-      
-      var canvas = document.querySelector('canvas');
-      canvas.width = a;
-      canvas.height = a;
-      var ctx = canvas.getContext('2d');
-      var img = ctx.createImageData(a, a);
-      console.log(img.data.length);
-      // arr.sort(); // sort values
-      for (let i=0; i<arr.length; i++) {
-        let g = arr[i]; // gray value
-        // console.log(g);
-        img.data[i*4+0] = 255-g;
-        img.data[i*4+1] = 10;
-        img.data[i*4+2] = 50;
-        img.data[i*4+3] = 255;
-      }
-      // img.data.set(arr);
-      ctx.putImageData(img, 0, 0);
-      
+    let files = [
+      'data/alice30.txt',
+      'data/faust_pg2229.txt',
+      'data/luther1912.txt'
+    ];
+    
+    let current = 0;
+    let sort = false;
+    loadIndex( current, sort );
+    
+    document.addEventListener("keyup", (e) => {
+      if (e.keyCode == 39) { loadIndex(current+1, sort); }
+      else if (e.keyCode == 37) { loadIndex(current-1, sort); }
+      else if (e.key == ' ') { loadIndex(current, !sort); }
     });
+    
+    function loadIndex( idx, _sort = false ) {
+      if (idx < 0) idx = 0;
+      else if (idx >= files.length) idx = files.length-1;
+      current = idx;
+      sort = _sort;
+      loadFile( files[current], sort );
+    }
+    
+    function loadFile( file, sort = false ) {
+      return fetch(file)
+      .then(res => res.arrayBuffer())
+      .then(buf => new Uint8Array(buf))
+      .then(arr => {
+        let a = Math.ceil(Math.sqrt(arr.length));
+        console.log(arr.length + ' bytes');
+        console.log( a + ' px');
+        console.log( a/300*25.4 + ' mm @ 300 ppi');
+        
+        var canvas = document.querySelector('canvas');
+        canvas.width = a;
+        canvas.height = a;
+        var ctx = canvas.getContext('2d');
+        var img = ctx.createImageData(a, a);
+        console.log(img.data.length);
+        if (sort) arr.sort(); // sort values
+        for (let i=0; i<arr.length; i++) {
+          let g = arr[i]; // gray value
+          // console.log(g);
+          img.data[i*4+0] = 255-g;
+          img.data[i*4+1] = 10;
+          img.data[i*4+2] = 50;
+          img.data[i*4+3] = 255;
+        }
+        // img.data.set(arr);
+        ctx.putImageData(img, 0, 0);
+      });
+    }
   </script>
   
   <canvas style="image-rendering:pixelated;"></canvas>
