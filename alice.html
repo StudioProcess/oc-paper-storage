@@ -54,10 +54,22 @@
         for (let i=0; i<arr.length; i++) {
           let g = arr[i]; // gray value
           // console.log(g);
-          img.data[i*4+0] = 255-g;
-          img.data[i*4+1] = 10;
-          img.data[i*4+2] = 50;
-          img.data[i*4+3] = 255;
+          if (current % 3 == 0) {
+            img.data[i*4+0] = 255-g;
+            img.data[i*4+1] = 10;
+            img.data[i*4+2] = 50;
+            img.data[i*4+3] = 255;
+          } else if (current % 3 == 1) {
+            img.data[i*4+0] = 10;
+            img.data[i*4+1] = 255-g;
+            img.data[i*4+2] = 50;
+            img.data[i*4+3] = 255;
+          } else if (current % 3 == 2) {
+            img.data[i*4+0] = 50;
+            img.data[i*4+1] = 10;
+            img.data[i*4+2] = 255-g;
+            img.data[i*4+3] = 255;
+          }
         }
         // img.data.set(arr);
         ctx.putImageData(img, 0, 0);
