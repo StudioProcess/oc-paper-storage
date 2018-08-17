@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>oc-paper-storage</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    canvas {
+      width: auto !important;
+      height: auto !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- <script src="node_modules/three/build/three.js"></script>
+  <script src="node_modules/three/examples/js/controls/OrbitControls.js"></script> -->
+  
+  <script type="module">
+    let files = [
+      'data/ocr/Chun_Code_as_Fetish-OCR.txt',
+      'data/ocr/Kalkuele_als_Repraesentationen-OCR.txt',
+      'data/ocr/Kittler_Friedrich_2008_Code_or_How_You_Can_Write_Something_Differently-OCR.txt',
+      'data/ocr/Knuth_Babylonian_Algorithms-OCR.txt'
+    ];
+    
+    let current = 0;
+    let sort = false;
+    loadIndex( current, sort );
+    
+    document.addEventListener("keyup", (e) => {
+      if (e.keyCode == 39) { loadIndex(current+1, sort); }
+      else if (e.keyCode == 37) { loadIndex(current-1, sort); }
+      else if (e.key == ' ') { loadIndex(current, !sort); }
+    });
+    
+    function loadIndex( idx, _sort = false ) {
+      if (idx < 0) idx = 0;
+      else if (idx >= files.length) idx = files.length-1;
+      current = idx;
+      sort = _sort;
+      loadFile( files[current], sort );
+    }
+    
+    function loadFile( file, sort = false, aspect = 2 ) {
+      return fetch(file)
+      .then(res => res.arrayBuffer())
+      .then(buf => new Uint8Array(buf))
+      .then(arr => {
+        let a = Math.ceil( Math.sqrt(arr.length) );
+        let w = Math.ceil( a * aspect );
+        let h = Math.ceil( a / aspect );
+        console.log(arr.length + ' bytes');
+        console.log(`${w}x${h} px`);
+        console.log( a/300*25.4 + ' mm @ 300 ppi');
+        
+        var canvas = document.querySelector('canvas');
+        canvas.width = w;
+        canvas.height = h;
+        var ctx = canvas.getContext('2d');
+        var img = ctx.createImageData(w, h);
+        console.log(img.data.length);
+        if (sort) arr.sort(); // sort values
+        for (let i=0; i<arr.length; i++) {
+          let g = arr[i]; // gray value
+          // console.log(g);
+          img.data[i*4+0] = g;
+          img.data[i*4+1] = g;
+          img.data[i*4+2] = g;
+          img.data[i*4+3] = 255;
+          
+          // img.data[i*4+0] = 255-g;
+          // img.data[i*4+1] = 255-g;
+          // img.data[i*4+2] = 255-g;
+          // img.data[i*4+3] = 255;
+          
+          // img.data[i*4+0] = 50;
+          // img.data[i*4+1] = 10;
+          // img.data[i*4+2] = 255-g;
+          // img.data[i*4+3] = 255;
+        }
+        // img.data.set(arr);
+        ctx.putImageData(img, 0, 0);
+      });
+    }
+  </script>
+  
+  <canvas style="image-rendering:pixelated;"></canvas>
+</body>
+</html>

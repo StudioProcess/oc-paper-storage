@@ -1,0 +1,301 @@
+Ancient Babylonian Algorithms
+Donald E. Knuth
+Stanford University
+One of the ways to help make computer science respectable is to show that it is deeply rooted in history, not just a short-lived phenomenon. Therefore it is natural to turn to the earliest surviving documents which deal with computation, and to study how people approached the subject nearly 4000 years ago. Archeological expeditions in the Middle East have unearthed a large number of clay tablets which contain mathematical calculations, and we shall see that these tablets give many interesting clues about the life of early "computer scientists."
+The early origins of mathematics are discussed,
+emphasizing those aspects which seem to be of greatest
+interest from the standpoint of computer science. A
+number of old Babylonian tablets, many of which have
+never before been translated into English, are quoted.
+Key Words and Phrases: history of computation,
+Babylonian tablets, sexagesimal number system, sorting
+CR Categories: 1.2
+Introduction to Babylonian Mathematics
+The tablets in question come from the general area of
+Mesopotamia (present day Iraq), between the Tigris and
+Euphrates rivers, centered more or less about the ancient
+city of Babylon (near present-day Baghdad). They are
+covered with cuneiform (i.e.
+"wedge-shaped") script, a
+form of writing which goes back to about 3000 n.c. The
+tablets of greatest mathematical interest were written
+about the time of the Hammurabi dynasty, about 1800­
+1600 n.c., and we shall be primarily concerned with
+texts that date from this so-called Old-Babylonian period.
+It is well known that Babylonians worked in a sexagesimal,  i.e. radix 60, number system, and that our present sexagesimal units of hours, minutes, and seconds are vestiges of their system. But it is less widely known that the Babylonians actually worked with  floating-point sexagesimal numbers, using a rather peculiar notation that did not include any exponent part. Thus, the twodigit number 2,20 stood for 2 X 60 + 20
+= 140, and for 2 + 20/60
+= 23,
+Copyright
+© 1972, Association for Computing Machinery, Inc.
+General permission to republish, but not for profit, all or part
+of this material is granted, provided that reference is made to this
+publication, to its date of issue, and to the fact that reprinting
+privileges were granted by permission ol' the Association for Com­
+puting Machinery.
+Author's address: Stanford University, Computer Science  De­
+partment,  Stanford,  CA  94305. The preparation of this paper was
+supported in part by the National Science Foundation, under grant
+GJ-992.
+671
+Communications
+of
+the  ACM
+July 1972
+Volume 15
+Number 7
+16 3,45 18 3>20 20 3 24 2,30 25 2,24 27 2,13,20 30 2 32 1,52,30 36 1,40 40 1,30
+and for 2/60 + 20/3600, and in general for 140 X 60", where  n  is any integer.
+At first sight this manner of representing numbers may look very awkward, but in fact it has significant advantages when multiplication and division are involved. We use the same principle when we do calculations by slide rule, performing the multiplications and divisions without regard to the decimal point location and then supplying the appropriate power of 10 later. A Babylonian mathematician computing with numbers that were meaningful to him could easily keep the appropriate power of 60 in mind, since it is not difficult to estimate the range of a value within a factor of 60. A few instances have been found where addition was performed incorrectly because the radix points were improperly aligned [7, p. 28], but such examples are surprisingly rare.
+As an indication of the utility of this floating-point notation, consider the following table of  reciprocals:
+2 30
+3 20
+4 15
+5 12
+6 10
+8 7,30
+9 6,40
+10 6
+12 5
+15 4
+Dozens of tablets containing this information have been found, some of which go back as far as the "Ur III dynasty" of about 2250 B.c. There are also many multiplication tables which list the multiples of these numbers; for example, division by 81 = 1,21 is equivalent to multiplying by 44,26,40, and tables of 44,26,40 X k for 1 < k < 20 and k = 30,40,50 were commonplace. Over two hundred examples of multiplication tables have been catalogued.
+45 1,20
+48 1,15
+50 1,12
+54 1,6,40
+1 I
+1,4 56,15
+1,12 50
+1,15 48
+1,20 45
+1,21 44,26,40
+excavated.
+from the other.
+been added in parentheses, to explain some of the things that were originally unstated on the tablets. All numbers are presented Babylonian-style, i.e. without exponents, so the reader is warned that he will have to supply an appropriate scale factor in his head; thus, it is necessary to remember that 1 might mean 60 and 15 might mean 4. The first example we shall discuss is excerpted from an Old-Babylonian tablet which was originally about 5 X 8 X 1 inches in size. Half of it now appears in the British Museum, about one-fourth appears in the Staatliche Museen, Berlin, and the other fourth has apparently been lost or destroyed over the years. The original text appears in [3, pp. 193 — 199; 4, Tables 7, 8, 39, 40; and 8, pp. 11-21]. A (rectangular) cistern. The height is 3,20, and a volume of 27,46,40 has been The length exceeds the width by 50. (The object is to find the length and the width.)
+You should take the reciprocal of the height, 3,20, obtaining 18. Multiply this by the volume, 27,46,40, obtaining 8,20. (This is the length times the width; the problem has been reduced to finding x and, given that x — y = 50andxy = 8,20. A standard procedure for solving such equations, which occurs repeatedly in Babylonian manuscripts, is now used.) Take half of 50 and square it, obtaining 10,25. Add 8,20, and you get 8,30,25. (Remember that the radix point position always needs to be supplied. In this case, 50 stands for 5/6 and 8,20 stands for 8$, taking into account the sizes of typical cisterns!)
+The square root is 2,55. Make two copies of this, adding (25) to the one and subtracting You find that 3,20 (namely 3-',) is the length and 2,30 (namely
+2s) is the width.
+This is the procedure. The first step here is to divide 27,46,40 by 3,20; this is reduced to multiplication by the reciprocal. The multiplication was done by referring to tables, probably by manipulating stones or sand in some manner and then writing down the answer. The square root was also computed by referring to tables, since we know that many tables of  n  vs.  n'  existed. Note that the rule for computing the values of x and y such that x — y = d and xy = p was to form sqrt((d/2)'  + p) + (d/2).
+The calculations described in Babylonian tablets are not merely the solutions to specific individual problems: they actually are general procedures for solving a whole class of problems. The numbers shown are merely included as an aid to exposition, in order to clarify the general method. This fact is clear because there are numerous instances where a particular case of the general method reduces to multiplying by 1; such a multiplication is explicitly carried out, in order to abide by the general rules. Note also the stereotyped ending, "This is the procedure," which is commonly found at the end of each section on a tablet. Thus the Babylonian procedures are genuine algorithms, and we can commend the Babylonians for developing a nice way to ex­
+Babylonian "Programming"
+The Babylonian mathematicians were not limited
+simply to the processes of addition, subtraction, mul­
+tiplication, and division; they were adept at solving
+many types of algebraic equations. But they did not
+have an algebraic notation that is quite as transparent as
+ours; they represented each formula by a step-by-step
+list of rules for its evaluation, i.e. by an algorithm for
+computing that formula. In efl'ect, they worked with a
+"machine language" representation of formulas instead
+of a symbolic language.
+The flavor of Babylonian mathematics can best be
+appreciated by studying several examples. The transla­
+tions below attempt to render the words of the original
+texts as faithfully as possible into good English, without
+extensive editorial interpretation. Several remarks have
+en
+Communications of
+the ACM
+July 1972
+Volume 15
+Number 7
+plain an algorithm by example as the algorithm itself was being defined.
+Here is another excerpt from the same tablet, this time involving only a linear equation:
+A cistern.
+The length (in cubits) equals the height (in gars, where 1 gar = 12 cubits).
+The cross-sectional area (in square cubits) plus this volume (in cubic cubits) comes to 1, 10 (namely 1-',).
+The length is 30 (namely $ cubit). What is the width?
+You should multiply the length, 30, by 12, obtaining 6; this is the height (in cubits instead of gars).
+Add 1 to 6, and you get 7. The reciprocal of 7 does not exist; what will give 1,10 when multiplied by 7? 10 will.
+(Hence 10, namely 1 is the cross-sectional area in square cubits.) Take the reciprocal of 30, obtaining 2. Multiply 10 by 2, obtaining the width, 20 (namely I cubit). This is the procedure. Note the interesting way in which the Babylonians disregarded units, blithely adding area to volume; similar examples abound, showing that the  numerical  algebra was of primary importance to them, not the physical or geometrical significance of the problems. At the same time they used conventional units of measure (cubits, even "gars" and the understood relation between gars and cubits), in order to set the scale factors for the parameters. And they "applied" their results to practical things like cisterns, perhaps because this would make their work appear to be socially relevant. In this problem it was necessary to divide by 7, but the reciprocal of 7 didn't appear on the tables because it has no finite reciprocal. (There is an infinite repeating expansion 1/7 = 8,34,17,8,34,17,..., but we have no evidence that the Babylonians knew this.) In such cases where the reciprocal table was of no avail, the text always says, in effect, "What shall I multiply by a in order to obtain  b?"  and then the answer is given. This wording indicates that a multiplication table is to be used backwards; for example, the calculation of 11,40 —: 35 = 20 [3, p. 329] could be read off from a multiplication table. For more difficult divisions, e.g. 1,26,40 —: 43,20 = 15 [3, p. 246; 5, p. 8], a slightly different wording was used, indicating perhaps that a special division procedure was employed in such cases. At any rate we know that the Babylonians were able to compute 7 —: 2,6; 28,20 —: 17; 10,12,45 —: 40,51; and so on. One Old-Babylonian table of reciprocals is known that gives reciprocals of irregular numbers to three sexagesimal places, but it is not extremely accurate [» p 16].
+A  certain volume of dirt has been excavated.
+instances such as the following text (again from the British Museum), the style is somewhat different [5, p. 19]: The sum of length, width, and diagonal is I, 1 and 7 is the area. What are the corresponding length, width, and diagonal? The quantities are unknown. 1,10 times 1,10 is 1,21,40. 7 times 2 is 14. Take 14 from 1,21,40 and 1,7,40 remains.
+1,7,40 times 30 is 33, 50.
+By what should 1, 10 be multiplied to obtain 33, 50? 1,10 times 29 is 33,50. 29 is the diagonaL The sum of length, width, and diagonal is 12 and 12 is the area. What are the corresponding length, width, and diagonal? The quantities are unknown. 12 times 12 is 2,24. 12 times 2 is 24. Take 24 from 2,24 and 2 remains. 2 times 30 is 1. By what should 12 by multiplied to obtain 1? 12 times 5 is 1. 5 is the diagonal. The sum of length, width, and diagonal is 1 and 5 is the area. Multiply length, width, and diagonal times length, width, and diagonal.
+Multiply the area by 2. Subtract the products and multiply what is left by one-half. By what should the sum of length, width, and diagonal be multiplied to obtain this product?
+The diagonal is the factor. This text comes from the considerably later "Seleucid" period of Babylonian history (see below), which may account for the difference in style. It treats a problem based on the rather remarkable formula d =
+—',((i+ w+ d)' — 2A)/(l+ w+ d),
+where
+A = Iw is the area of a rectangle,
+d =  g(P  + w') is the length of its diagonals.
+(There is ample evidence from other texts that the OldBabylonian mathematicians knew the so-called Pythagorean theorem, over 1000 years before the time of Pythagoras.) The first two sections quoted above work out the problem for the cases (I, w, d) = (20, 21, 29) and (3, 4, 5) respectively, but without calculating 1 and w; we know from other texts that the solution tox + y = a, x'+ y' =  b  was well known in ancient times. The description of the calculation in these two sections is unusually terse, not naming the quantities it is dealing with. On the other hand, the third section gives the same procedure entirely  without  numbers. The reason for this may be the fact that the stated parameters 1 and 5 cannot possibly correspond to the length+ width+diagonal and the area, respectively, of any rectangle, no matter what powers of 60 are attached! Viewed in this light, teachers of computer science will recognize that the above text reads very much like the solution to an examination in which an impossible problem has been posed. (Note also that the second section follows the
+Further Examples
+We have noted that general algorithms were usually
+given, accompanied by a sample calculation. In rare
+673
+Communications
+of
+the  ACM
+July 1972
+Volume 15
+Number 7
+general procedure, as stated in the third section, very faithfully when it comes to dividing 1 by 12, instead of using the reciprocal of 12.)
+Instances of algorithms without accompanying numbers are very rare; here is another one, this time an Old-Babylonian text from the Louvre [4, p. 39; 8, p. 71]: Length and width is to be equal to the area. You should proceed as follows. Make two copies of one parameter. Subtract 1. Form the reciprocal. Multiply by the parameter you copied. This gives the width. In other words, if x + y = xy, it is possible to compute y by the procedure y = (x — 1) — ' x. The fact that no numbers are given made this passage particularly hard to decipher, and it was not properly understood for many years (see [9, pp. 73-74]); hence we can see the advantages of numerical examples. The above procedure reads surprisingly like a program for a "stack machine" like the Burroughs B5500! Note that both in this example and in the very first one we discussed we are told to make two copies of some number; this indicates that actual numerical calculations generally destroyed the operands in the process of finding a result. Similarly we find in other texts the instruction to "Keep this number in your head" [6, pp. 50 — 51], a remarkable parallelism with today's notion that a computer stores numbers in its "memory." In another place we read, in essence, "Replace the sum of length and width by 30 times itself" [3, p. 114], an ancient version of the assignment statement "x:
+= x
+/2".
+Conditionals and Iterations
+So far we have seen only "straight-line" calculations, without any branching or decision-making involved. In order to construct algorithms that are really nontrivial from a computer scientist's point of view, we need to have some operations that affect the flow of control. But alas, there is very little evidence of this in the Babylonian texts. The only thing resembling a conditional branch is implicit in the operation of division, where the calculation proceeds a little differently if the reciprocal of the divisor does not appear in the table. We don't find tests like "Go to step 4 if x ( 0", because the Babylonians didn't have negative numbers; we don't even find conditional tests like "Go to step 5 if x = 0", because they didn't treat zero as a number either! Instead of having such tests, there would effectively be separate algorithms for the difl'erent cases. (For example, see [3, pp. 312 — 314] for a case in which one algorithm is step-by-step the same as another, but simplified since one of the parameters is zero.)
+Nor are there many instances of iteration. The basic operations underlying the multiplication of high-precision sexagesimal numbers obviously involve iteration,
+as the interest rate.
+otherwise the 32 would never be used and the rest of the
+and these operations were clearly understood by the Babylonian mathematicians; but the rules were apparently never written down. No examples showing intermediate steps in multiplication have been found. The following interesting example dealing with compound interest, taken from the Berlin Museum collection, is one of the few examples of a "Do 1 = 1 To N" in the Babylonian tablets that have been excavated so far [3, pp. 353 — 365; 4, Tables 32, 56, 57; 5, p. 59; 8, pp. 118 — 120]: I invested 1 maneh of silver, at a rate of 12 shekels per maneh (per year, with interest apparently compounded every five years). I received, as capital plus interest, 1 talent and 4 manehs. (Here 1 maneh = 60 shekels, and 1 talent = 60 manehs.) How many years did this take? Let 1 be the initial capital. Let 1 maneh earn 12 (shekels) interest in a 6 ( = 360) day year. And let 1,4 be the capital plus interest. Compute 12, the interest, per 1 unit of initial capital, giving 12 Multiply 12 by 5 years, giving 1. Thus in five years the interest will equal the initial capital. Add 1, the five-year interest, to 1, the initial capital, obtaining 2. Form the reciprocal of 2, obtaining 30. Multiply 30 by 1,4, the sum of capital plus interest, obtaining 32. Find the inverse of 2, obtaining 1. (The " inverse" here means the logarithm to base 2; in other problems it stands for the value of  n  such that a given value  f(n)  appears in some table.) Form the reciprocal of 2, obtaining 30. Multiply 30 by 30 (the latter 30 apparently stands for 32 — 2, for calculation would make no sense), obtaining 15 ( = total interest without initial capital if the investment had been cashed in five years earlier).
+Add 1 to 15, obtaining 16. Find the inverse of 16, obtaining 4. Add the two inverses 4 and 1, obtaining 5. Multiply 5 by 5 years, obtaining 25. Add another 5 years, making 30. Thus, after the 30th year the initial capital and its interest will ... (Here about 4 lines of the text have broken off. Apparently there is now a question of checking the previous answer.) ... giving 12 as the interest rate.
+Multiply 12 by 5 years, giving 1. Thus in five years the interest will equal the initial capital. Add 1, the five-year interest, to 1, the initial capital, obtaining 2, the capital and its interest after the fifth year. Add 5 years to the 5 years, obtaining 10 years. Double 2, the capital and its interest, obtaining 4, the capital and its interest after the tenth year.
+Add 5 years to the 10 years, obtaining 15 years. Double 4, the capital and its interest, obtaining 8, the capital and its interest after the fifteenth year.
+Add 5 years to the 15 years, obtaining 20 years. Double 8, obtaining 16, the capital and its interest after the twentieth year.
+Add 5 years to the 20 years, obtaining 25 years. Double 16, the capital and its interest, obtaining 32, the capital and its interest after the twenty-fifth year.
+Add 5 years to the 25 years, obtaining 30 years. Double 32, the capital and its interest, obtaining 1,4, the capital and its interest after the thirtieth year,
+This long-winded and rather clumsy procedure reads almost like a macro expansion!
+be 1,4.
+674
+Communications of
+the  ACM
+July 1972
+Volume 15
+Number 7
+A more sophisticated example involving compound interest appears in another section of the Louvre tablet quoted earlier. The same usurious rate of interest (20 percent per annum) occurs, but now compounded annually: One kur (of grain) has been invested; after how many years will the interest be equal to the initial capital?
+You should proceed as follows. Compound the interest for four years. The combined total (capital + interest) exceeds 2 kur. What can the excess of this total over the capital plus interest for three years be multiplied by in order to give the four-year total minus 2?
+2,33,20 (months). From four years, subtract 2,33,20 (months), to obtain the desired number of full years and days.
+Translated into decimal notation, the problem is to determine how long it would take to double an investment. Since 1.728 = 1.2' < 2 < 1.2 4 = 2.0736, the answer lies somewhere between three and four years. The growth is linear in any one year, so the answer is
+sum?
+1.2' — 2
+2
+33 20
+1.2' — 1.2' 60 3600 months less than four years. This is exactly what was
+computed [5, p. 63].
+Note that here we have a problem with a nontrivial iteration, like a "WHII.E" clause: The procedure is to form powers of 1 +  r,  where r is the interest rate, until finding the first value of  n  such that (1 +  r)"  > 2; then calculate
+k  1
+texts.
+vances: From 1 to 10, sum the powers (literally the "ladder" ) of 2. The last term you add is 8, 32. Subtract 1 from 8,32, obtaining 8,31. Add 8,31 to 8,32, obtaining the answer 17,3.
+The squares from 1 X 1 = 1 to 10 X 10 = 1,40; what is their Multiply 1 by 20, namely by one-third, giving 20. Multiply 10 by 40, namely by two thirds, giving 6,40. 6,40 plus 20 is 7. Multiply 7 by 55 (which is the sum of 1 through 10), obtaining 6,25.
+6,25 is the desired sum. Here we have correct formulas for the sum of a geometric series Q 2" = 2" + (2" — 1) and for the sum of a quadratic series gk = -+-n gk. These formulas have not been found in Old-Babylonian Moreover, this same Seleucid tablet shows an in­
+creased virtuosity in calculation; for example, the roots to complicated equations like xy = 1, x+ y = 2,0,0,33,20 (solution: x = 1,0,45 and y = 59,15,33,20) are computed. Perhaps this problem was designed to demonstrate the use of the new zero symbol. An extremely impressive example of the Seleucid era calculating ability appears in another Louvre Museum tablet [3, pp. 14 — 22]. It is a 6-place table of reciprocals, which begins thus: By the power of Anu and Antum, whatever I have made with my hands, let it remain intact.
+ample, a symbol for zero was now used within numbers, instead of the blank space that formerly appeared. The following excerpts from a text in the Louvre Museum [3, pp. 96 — 103; 8, p. 76] indicate some of the other ad­
+and the answer is that the original investment will double in  n  years minus this many months. This procedure suggests that the Babylonians were familiar with the idea of linear interpolation. Therefore the trigonometric tables in the famous "Plimpton tablet" [6, p. 38 — 41] were possibly used to obtain sines and cosines in a similar way.
+The Seleucids
+Old-Babylonian mathematics has several other interesting aspects, but a more elaborate discussion is beyond the scope of this paper. Very few tablets have been found that were written after 1,600 a.c., until approximately 300 a.c. when Mesopotamia became part of the empire of Alexander the Great's successors, the "Seleucids." A great number of tablets from the Seleucid era have been found, mostly dealing with astronomy which was highly developed. A very few pure mathematical texts of this era have also been found; these tablets indicate that the Old-Babylonian mathematical tradition did not die out during the intervening centuries. Indeed, some noticeable progress was made; for ex­
+1
+Reciprocal
+Reciprocal
+Reciprocal
+Reciprocal
+and so on, ending with
+2,57,8,49,12
+Reciprocal 2,57,46,40
+1,0,16,53,53,20
+1,0,40,53,20
+1,0,45
+2,59,21>40,48,54
+is 20
+First part; results for 1 and 2, incomplete. Table of Nidintum-Anu, son of Inakibit-Anu, son of Kuzu, priests of Anu and Antum in Uruk. Author Inakibit-Anu.
+is I
+59,43,10,50,52,48 59,19,34,13,7,30 59,15>33,20
+20,19,19,34,45,35,48,8,53,20
+20,15
+20,4,16,22>28>44,14>57,40>4>
+56,17,46,40
+Reciprocal 3
+675
+Communications
+of
+the  ACM
+July 1972
+Volume 15
+Number 7
+Apparently Inakibit-Anu (whom we shall call Inakibit for short) was the author of this remarkable table; and his son made a copy. Another tablet or tablets, now lost, continued the table to numbers beginning with 3,4,....
+There are exactly 231 sexagesimal numbers of six digits (i.e. six sexagesimal places) or less which have a finite reciprocal and which begin with 1 or 2.  This table contains every one o f them,  without exception. And 20 further entries, giving reciprocals of numbers that have more than six digits, are also included.  It  is not clear how these 20 extra numbers were selected. (See the Appendix to this paper for further discussion.) How did Inakibit prepare this table? The simplest procedure would be to start with the pair of numbers (1, 1) and then to go repeatedly from (x, y) to (2x, 30y), (3x, 20y), and (5x, 12y) until no more numbers x of six or less digits are possible. (In fact this procedure can be simplified further if we note that only those values x of the form 2'3'5' need to be considered where either  i  < 1 or j = 0 or  k = 0;  other numbers are multiples of 60.) There is some evidence that this is exactly what he did; for example, several tables are known that start with some pair of reciprocals and then repeatedly apply one of these three operations [6, p. 13 — 16]. An even more convincing argument for this hypothesis is that Inakibit's values for 3 —" and 3 —" are both wrong; and most of the errors in 3 —" are accounted for if we assume that he calculated 3 "from the incorrect value of 3 — ". The complete table requires that 721 pairs (x, y) must be generated, and of course it is very laborious to work with such high-precision numbers. Moreover, even after all these pairs (x, y) have been computed, the work is far from done; it is still necessary to  sort  them into order! Inakibit's table is the earliest known example of a large file that has been sorted; and this is one of the reasons his work is so impressive, as anyone who has tried to sort over 700 cards by hand will attest. To get some idea of the immensity of this task, consider that it takes many hours to sort 700 large numbers by hand nowadays; imagine how difficult it must have been to do this job in ancient times! Yet Inakibit must have done it, since there is no simple way to generate such a table in order. (As we might expect, he made a few mistakes; there are three pairs of lines which should be interchanged to bring the table into perfect order.) Thus, Inakibit seems to have the distinction of being the first man in history to solve a computational problem that takes longer than one second of time on a modern electronic computer!
+matics  by A.A. Aaboe [1] can be recommended, as can
+B.L. van der Waerden's well-known treatise  Science
+Awakening  [9]. Much of the deciphering of Babylonian
+mathematical texts was originally due to Otto Neuge­
+bauer, who has written an authoritative popular ac­
+count  The Exact Sciences in Antiquity  [7]; see especially
+his fascinating discussion, pp. 59-63; 103-105, of the
+problems that plague historical researchers in this field.
+For more detailed study, it is fun to read the original
+source material. Neugebauer published the texts of all
+known mathematical tablets,, together with German
+translations, in a comprehensi ve series of three volumes,
+during the period 1935 — 1937 [3, 4, 5]. A French edition
+of the texts [8] was published in 1938 by F. Thureau­
+Dangin, an eminent Assyriologist. Then in 1945, Neuge­
+bauer and A. Sachs published a supplementary volume
+[6], which includes all mathematical tablets discovered
+in the meantime (mostly in American museums). The
+Neugebauer-Sachs volume is written in English, but un­
+fortunately these tablets are not quite as interesting as
+the ones in Neugebauer's original German series. A list
+of developments since 1945 appears in [7, p. 49].
+Most of the Babylonian mathematical tablets have
+never been translated into English. The translations
+above have been made by comparing the German of
+[3, 4, 5] with the French [8]; but these two versions ac­
+tually diAer in many details, so the Akkadian and
+Sumerian vocabularies published in [4, 8, 6] have been
+consulted in an attempt to give an accurate rendition.
+Since only a tiny fraction of the total number of clay
+tablets has survived the centuries, it is obvious that we
+cannot pretend to understand the full extent of Babylo­
+nian mathematics. Neugebauer points out that the job
+of discovering what they knew is something like trying
+to reconstruct all of modern mathematics from a few
+pages that have been randomly tom out of the books in
+a modern library. We can only place "lower bounds" on
+the scope of Babylonian achievements, and speculate
+about what they did not know.
+What about other ancient developments? The Egyp­
+tians were not bad at mathematics, and archeologists
+have dug up some old papyri that are almost as old as
+the Babylonian tablets we have discussed. The Egyptian
+method of multiplication, based essentially in the binary
+number system (although their calculations were deci­
+mal, using something like Roman numerals), is espe­
+cially interesting; but in other respects, their use of
+awkward "unit fractions" left them far behind the
+Babylonians. Then came the Greeks, with an emphasis
+on geometry but also on such things as Euclid's al­
+gorithm; the latter is the oldest nontrivial algorithm
+which still is important to computer programmers. (See
+[7, 9] for the history of Egyptian mathematics, and [1, 7,
+9] for Greek mathematics. A free translation of Euclid's
+algorithm in his own words, together with his incom­
+plete proof of its correctness, appears in [2, p. 294-296].)
+And then there are the Indians, and the Chinese; it is
+clear that much more can be told.
+Suggestions for Further Reading
+If you have been captivated by Babylonian mathe­
+matics, there are several good books on the subject
+which give further interesting details. The short intro­
+ductory text  Episodes from the Early History of Mathe­
+676
+Communications
+of
+the ACM
+3uly 1972
+Volume 15
+Number 7
+Acknowledgment.  I wish to thank Professor Abraham Seidenberg for his courtesy in helping me obtain copies of [3] and [8] when I needed them.
+Appendix
+The 20 additional entries included in Inakibit's table are some­
+what mysterious. In 19 of the cases, the number has a reciprocal with six digits or less; the exception is 3" = 2, 1,4,8, 3,0,7, whose reciprocal has 17 sexagesimal digits.
+Let's say that a sexagesimal number is a  Q-number  if it has six or less digits, while its reciprocal is finite and has more than six digits and begins with 1 or 2, There are 132 Q-numbers in all, only 19 of which appear in Inakibit's table. Five of these are 2", 2", 3", 3", and 3"; they constitute all Q-numbers of the forms 2", 3", or 5", and it is likely that such numbers appeared in special tables. However, the Q-number 6u is not included, so it is not simply a matter of perfect powers being included. The threedigit Q-numbers 2'3 10 and 2'3' are excluded, so it not a matter of including the smallest cases. The Q-numbers which do appear, besides the five listed above, are 3'5' 3"5' 3u5' 2'3'5' 2'3u5' 2131353 (but not  2 131656 ) 3 13 51 2339  27310 212311 216312 220 32 22253 2"5'. It is perhaps noteworthy that 3u5' does not appear, but its multiple 3u5' does.
+Since so many Q-numbers are missing, we may conclude that Inakibit continued his table by giving the reciprocals of all sixdigit numbers up to 59,43,10,50,52,48, not taking advantage of symmetry. Hence the complete table contained the reciprocals of at least 721 six-digit numbers, and it probably filled three clay tablets in all.
+References
+7.
+4.
+2.
+3.
+tablets. 6.
+Aaboe, Asger A.  Episodes from the Early History of Mathematics.
+1.
+Random House, New York, 1964, 133 pp.
+Knuth, Donald E.  Seminumerical Algorithms.  Addison-Wesley, Reading, Mass., 1971 (second printing), 624 pp. Neugebauer, O. Mathematische keilschrift-texte. In  Quellen und Studien zur Geschichte der Mathematik, Astronomic, und Physik,  Vol. A3, Pt. 1, 1935, 516 pp.
+Neugebauer, O. Mathematische keilschrift-texte. In  Quellen und Studien zur Geschichte der Mathematik, Astronomic, und Physik,  Vol. A3, Pt. 2, 1935, 64 pp. plus 69 reproductions of tablets. 5.
+Neugebauer, O. Mathematische keilschrift-texte. In  Quellen und Studien zur Geschichte der Mathematik, Astronomic, und Physik,  Vol. A3, Pt. 3, 1937, 83 pp. plus 6 reproductions of
+Neugebauer,  O.,  and Sachs, A.  Mathematical Cuneiform Texts. American Oriental Society, New Haven, Conn., 1945, 177 pp. plus 49 reproductions of tablets.
+Neugebauer, O.  The Exact Sciences in Antiquity.  Brown U. Press, Providence, R.I., 1957 (second ed.), 240 pp. plus 14 photographic plates. g.
+Thureau-Dangin, F.  Textes Mathematiques Babyloniens.  E.J. Brill, Leiden, The Netherlands, 1938, 243 pp. van der Waerden, B.L.  Science Awakening.  Tr. by Arnold Dresden. P. Noordhoff, Groningen, The Netherlands, 1954, 306 pp.
+9.
+Communications of the ACM
+July 1972
+Volume 15
+Number 7

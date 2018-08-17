@@ -1,0 +1,182 @@
+aus: H.-J. Rheinberger, M. Hagner, B. Wahring-Schmidt (Hrsg.), Räume des Wissens: Repräsentation, Codierung, Spur, Berlin: Akademie Verlag 1997
+Sybille Krämer
+Kalküle als Repräsentation
+Zur Genese des operativen Symbolismus in der Neuzeit
+I. „Ontologischer" und „operativer Symbolismus" Meine Überlegungen beziehen sich auf einen Umbruch im wissenschaftlichen Symbolgcbrauch in der Neuzeit. Es geht um den Übergang von einem „ontologischen" zu einem „operativen Symbolismus". Unter „ontologischem Symbolismus" sei die Auffassung verstanden, daß das Gegebensein symbolisch repräsentierter Gegenstände unabhängig sei vom Akt der Symbolisierung, so daß also die Gegenstände „ihren" Symbolen vorausgehen, und die Symbole einen bloß sekundären Status innehaben.  Der  Begriff „operativer Symbolismus" akzentuiert dagegen die Überzeugung, daß die sinnlich wahrnehmbaren Symbole gegenüber dem, was sie repräsentieren, primär sind, daß also die symbolisierten Gegenstände erst durch den Akt symbolischer Bezugnahme hervorgebracht werden. Der Übergang vom ontologischen zum operativen Symbolismus kann so pointiert werden: Nicht'mehr verleihen die Dinge den Zeichen ihre Bedeutung. vielmehr konstituieren die Zeichen die Dinge überhaupt erst als epistemischc Gegenstände.' Nun gibt es Gründe dafür, daß sich im epistemologischen Raum der frühen Neuzeit verglichen mit den cpistemischen Grundlagen des klassischen griechischen Denkens — dieses neue Verhältnis von Symbol und Gegenstand ausbildete. Einer dieser Gründe — und das wäre hier die Hypothese — liegt in einer medialen innovation, in der Entstehung und dem Gebrauch eines spezifischen Typus von Schrift.  Es  geht um die kalkülisierte Schrift, die hier — im Unterschied zur phonetischen Schrift — „operative Schrift" genannt sei. Operative Schriften sind graphische Symbolsysteme mit einer doppelten Funktion: Sie sind ein Medium zur isomorphen Repräsentation eines gewissen Bereiches von Gegenständen und zugleich ein Werkzeug zum (symbolischen) Operieren mit diesen Gegenständen.
+Ynu.l.l  Kk «hil<k
+Kulkule als Reprüheniution
+durch das sie eingeführt werden. „Gegenwärtig" sind sie nur in Gestalt ihrer symbolischen Vergegenwärtigung; ihre Präsentation ist möglich nur in Form der symbolischen Repräsentation. An der Null tritt dies drastisch zutage: Ziffernsysteme, die auf der Anzahlenbildung beruhen, wie etwa das römische Ziffernsystem, brauchen keine „Null": Und fünf Rechensteine weniger fünf Rechensteine ergibt nicht null, sondern keine Rcchensteine. An der Null auch zeigt sich, daß das Operieren im symbolischen System und das Interpretieren sich voneinander zu lösen beginnen: Jahrhundertelang wurde init der Null gerechnet,4 ehe mit George Booles „leerer Menge" die mathematische „Natur" dieses Gegenstandes überhaupt geklärt
+ll3
+II. Die Mathematik als Pionierin des operativen
+Symbolgebrauches
+Klären wir in einem ersten Schritt, was es heißt, daß in der frühen Neuzeit eine besondere Art symbolischer Systeme zu intellektucllem Einsatz komint. An vier Ereignissen möchte ich diese intellektuelle Strategie demonstrieren. Es sind allesamt mathematische Entdeckun<ren; ein Dokument dafür, dalJ die Mathematik Pionierin dieser neuarti<'en Strategie der Symbolisierung ist. E» <i eht um das Rechnen im dezimalen Positionssystein, welches iin I S. Jahrhundert sich endgültig durchsetzte; um die Erfindung der Buchstabcnalgchra im irr. Jahrhundert; um Descartes' „analytische Geometrie" und schlicfJlich uin Leibnizens Infinitesimalkalkül.
+werden konnte.-'
+g Krürner l<l88, 54 — 71. 5 Klein 1956. H. 2.
+I. Sclt)i ftliclte» Rechnen in) dezt>nztle)t Positirrttssystent Bevor das von den Indern erfundene dezimale Positionssystem sich im Luropa des 15. Jahrhunderts allgemein durchgesetzt hatte, wurden Zahlen mit tö))nischen Ziffern dargestellt; gerechnet werden mußte jedoch mit dem Rechenbrett, denn die römischen Ziffern sind als Rechenmedium ungeeignet. Das dezimale Positionssystem ermöglicht also erst einmal, daß Zahlendarstellung und Zahlenrechnen in ein und demselben Medium realisierbar sind. Damit bleibt das Rechnen nicht länger ein gegenständliches Hantieren niit abzählbaren Mengen, sondern wird zur Manipulation schriftlicher Zeichen. Die Regeln dieser Zeichenoperationen sind Algorithmen, also so elementar,  dttß  sie von jedem nahezu maschinenhaft praktiziert werden können, der die Zahlensprache der elementaren Arithmetik und die auf' ihr beruhenden Rechenregeln sich anzuei<'nen bereit ist. Mit der Verschriltlichung des Rechnens durch das deziitlale Positionssystem avanciert eine formale Sprache zu einer Kulturtcchnik.' In der Folge dieser Symboltechnik entsteht ein neuer Zahlbcgriff':-i Zahl bleibt nicht länger — wie noch im griechischen arithmos-Begrifl' — Anzahl, sonIlern wird zu etwas, das als Referenzgcgenstand eines arithmctischcn Syntbol», mit dein regelgeleitet verfahren werden kann, intcrprctierbar ist. Dic Medien des Rechnens konturieren also nicht nur die Rechenvcrfahren. sondern strukturieren und generieren zugleich die Objekte, mit denen gerechnet wird. Eine neue Art kognitiver Gegenstände ist entstanden. Es sind ideelle Ge<ienstiinde, die nur nach Maßgabe des operativen symbolischen Verfahrens existieren,
+­
+nommen wird.
+2. Bttcftsrrtbe)tttlg<elrrzt Im l5. Jahrhundert erfindet Fram„'ois Vieta die Buchstabenalgebra.n Mit der symbolischcn Algebra werden die Regeln für das Auflösen von Gleichungenzuvor praktiziert als ein implizites Wissen, ein ingeniöses  Inowing l iou schriftlich explizierbar und damit lehr- und lernbar. Die Folge ist, daß die Algebra, die zuvor den Status einer „ars magna et occulta" innehatte, somit als eine Art von Geheimwissen galt, nun in den Kanon der Wissenschaften aufgeDieser Wandel in den mathematischen Wissensformen ist möglich durch
+eine darstellungstechnische Innovation: Die Schriftzeichen der Algebra stehen nicht länger für wohlbestimmte Gegenstände, sondern für .,unbestimmte Gegenstände"; sie sind Variablenzeichen, die alle möglichen Gegenstände vertreten, welche so in die Formel einsetzbar sind, daß ein wahrer Satz entsteht. Von Aristoteles' logischen Variablen unterscheidet sich Vietas Notation dadurch, dalk aus der aristotelischen Ersetzung der Variablenzeichen ein Satz der Umgangssprache entsteht, bei Vieta aber sich ein formalsprachlicher Satz, z. B. der Arithmctil', ergibl. Die Formeln der Buchstabenalgebra können sich ihrerscils nur wieder auf' formale Zeichen beziehen.
+4  Bih  zum Beginn der Neuzeit galt die Null nur als Lüchenzeichen im Pohition hhyhtem (Troptl e logo: I, 141). Brht die Mathematiher Sterin (1548 — 1600) und Wallih (1616 — 1705) stellen die theoretische Iirage. oh die Null eine Zahl sei. 5 Indem der Logil.cr und Algebraiker George Boole (1815 — 1864) die leere Menge auhdrücklich zu den Mengen rechnet (Bimle 11(54, ZS), uird die Null alh Zahl im Sinne einer Kardinalzahl. die au h Anzahlen  von I lcnlclltcn von Mcngcn hesteht, anerkannt. Hanh-J<irg Rheinberger gibt ullerdingh zu bedenken, daü Boolch .,leere Menge" weniger für eine Kldrung, vielmehr für eine Verwirrung gesorgt
+habe.
+6 Vista 164().
+svnn.l.l< Kk<<«<n<k
+Kalkule al» Reprakeniaii«n
+gig sei von der inhaltlichen Deutung der infinitesimalen Größen, ist Sinn und Gehalt von Leibnizens Betonung, daß die Gegenstände der Mathematik von metaphysischen Kontroversen nicht abhängig zu machen seien. Demgegenüber gingen  sowohl die lrühen Praktiker des Diflerentialkalküls, die Gebrüder Bernoulli und der Mtirquis L'Hospital, wie auch dessen Kritiker, der Niederländer Bernard Nieuwentijt und Bischof George Berkeley, von einer denotativen Interpretation des Inlinitesimalsymbolismus aus. Akzeptanz oder Verwerfung der Infinitesimalrcchnung werden bei ihnen davon abhängig gemacht, ob die Deutung, dal3 die Dillerentiale tatsächlich für unendlich kleine Größen ständen, plausibel gemacht oder eben destruiert werden könne.'n Doch nicht nur die operative Effizienz, auch Leibnizens Überlegungen zur Rechtlerti <'un<' der Inlinitesimalmathematik fußen auf der Idee des Kalküls:' ' Leibniz < ründet diese Überlegungen auf das Prinzip der Kontinuität, d. h. aber auf die Miiglichkcit, eine Transformationsregel auf eine gewisse Ausgangskonfiguration von Zeichen unbegrenzt oft wiederanwenden zu können. Der Ort I'ür ein solches Verlahren aber ist der Kalkül.
+I I5
+3.  Analvtisclte Geatnetrie
+Mit seiner „analytischen Geometrie" entdeckt Descartes, dal3 durch die Abbildung von Punkten auf Zahlenpaare <'cometrische I igurcn in die Fornielsprachc der Algebra übersetzbar sind. Damit werden nicht alleine die seit der Entdeckung des Irrationalen in der griechischen Mathematil sich unanbltüngig voneinander entwickelnden Strän<'e geometrischen und arithmetischen Denkens wieder aufeinander beziehbar. Und es wird auch nicht blol3 das geometrische Problemelösen vereinfacht durch seine Rücklührung aul'ein algebraischcs Rechnen. Vielmehr wird schriftliche Repräsentierbarkeit zu einein Inathematischen Existenzkriterium:" Descartes ordnet in seiner „Geometrie" Typen gcometrischer Kurven und ihnen entsprechende Klassen geometrischer Konstrultionsmittel Typen algebraischer Gleichungen zu. Kurven, für welche eine algebraische Transkription nicht auffindbar ist. werden al» „mechanische Kurven" aus der Geometrie ausgeschlossen, und damit aus der wissenschal'tlichcn Mathematik verbannt.
+Mit der Erfindung der analytischen Geometrie wird algebraische Berechenbarkeit zum Garanten geometrischer Konstruierbarkeit. Die Rcpräsenticrbarkeit einer Figur durch die Formel, die Substituierbarkeit eines Bildes durch eine Schrift, wird zu einem Kriterium geometrischer Existenz.
+III. Die Entkoppelung von Verfügen und Verstehen
+Gibt es an diesem Panorama disparater mathematischer Innovationen so etwas
+wie einen verbindenden Stil; kristallisiert sich ein gemeinsamer Grundzug aus?
+Zuerst einmal: Alle diese Fortschritte mathematischen Denkens haben zu tun
+mit der Erl'indung und Konstruktion neuer Schriften. Und so verschieden die
+Symbolsysteme des dezimalen Positionssystetns, der Buchstabenalgebra und
+der Dilferentialanalysis auch jeweils sind: Sie stimmen darin überein, einen
+Schrilttypus zu verkörpern. der von der phonetischen Schrift wohlzuunter­
+scheiden ist und der hier „operative Schrift" genannt wurde. Operative Schrit­
+ten gehen nicht hervor aus der Verschriftlichung der Lautsprache, sondern sind
+graphische Systcine s«i generis, welche dann allenlalls versprachlicht werden
+könnclu  Dils  Besondere dieser Schrift ist, daß sie nicht auf Sprachlaute rele­
+riert, sondern aul' kognitive Gegenstände:
+ein Tatbestand, der in Freges
+Begriffsschrilt'2 sich unverhüllt darbieten wird. Denn diese Schrift können wir
+nur noch anschauen, nicht aber mehr aussprechen.
+Operative Schriften erfüllen eine doppelte Aufgabe: Sie dienen als ein Medi­
+um und zugleich al» ein Werkzeug geistiger Arbeit. Metaphorisch gesprochen:
+4.  Iti
+fi»i tesimalkallciil
+Die technische Grundidee von Leibnizens Inlinitesimalkalkül" besteht darin,
+die algorithmische Prozedur formaler Symbolmanipulation, die mit dem dezi­
+malen Positionssystem für die elementare Arithmetik kanonisch wurde, aul' die
+höhere Analysis, auf' das Rechnen mit unendlich kleinen und grol3cn Grül3en.
+zu übertragen. Nichts ist ontologisch, nichts ist  philosophisch  un cwisscr als
+di«Frage, was das Unendliche sei, ob cs z. B. als aktuell oder als potentiell
+Unendliches zu begreifen ist. Leibnizens Kunstgrifl' besteht nun darin, ein
+symbolisches Verfahren zu ersinnen, dessen Effektivität von den metaphysi­
+schen Fragen nach der „Natur" des Unendlichen gerade nicht mehr hcrührt
+wird. Die Korrektheit seines Differential- und lntegralkalküles ist unabhängig
+von der Frage, wie die kalkülisierten Ausdrücke jeweils zu deuten sind. Dal3
+die Kontrolle über die Richtigkeit der mathematischen Operationen unabhän­
+7 Descartes 1981.
+8 Krämer 1989.
+9 Leibniz 11146.
+10 Krämer 1991b, 121 — 125.
+I I Kramer 1991b.
+12 1'rege 11179.
+116
+Svi<ILLU KkAt<1Lk
+Kalküle als Repräsentation
+Für den aufklärerischen Impuls, Wahrheitserkenntnis zu profanisieren jenseits von Offenbarungswahrheit und genialischer Inspiration, entfaltet die idee, Erkenntnisprozesse zu algorithmisieren, ihnen somit eine Sicherheit zu verleihen, wie sie sonst nur den Garantieprodukten handwerklichen Tuns eigen ist, eine suggestive Attraktivität.  Wahrheit — zurückführbar au f kicittigheif: Diese Leitidee der Methodisierung neuzeitlicher Wissenschaft findet in der schriftlichen Operationalisierung des wissenschaftlichen Symbolgebrauches ihr „buchstäbliches" Fundament. Diese Hypothese an Leibnizens Theorie des Erkennens zu überprüfen, ist das Ziel des letzten Schrittes in meinen Überle­
+ll7
+Mit ihnen werden Sprachen als eine Technik eingesetzt. E» ist also diese Dop­
+pelfunktion, zu repräsentieren und zugleich mit dem, was repräsentiert wird, auch zu operieren, worin die intellektuelle Wirkungskraft der Kalküle wurzelt. Was sie zu einer „symbolischen Maschine",tä zu einem mechanischcn „intelligenzverstärker" macht, ist, daß die Regeln der symbolischen Operation keinen Bezug nehmen auf das, was die Symbole jeweils bedeuten. Obwohl der intellehtuelle Nutzen des Kalküls sich erst da ertiflnct, wo der Kalkül gedeutet, also eine Isomorphie entdeckt wird zwischen der Region der Zeichen und einer Domäne kognitiver Gegenstände, ist der Akt kalkülisierter Manipulation durchaus bedeutungsindifferent ausführbar. Wo immer ein Erkenntnisprozcß vollständig kalkülisierbar ist, kann eine Denkhandlung zur  qttosi  handwerklichen Symbolmanipulation regredieren: Das Wissen, wie wir eine kalkulatorische Symboloperation durchführen, trennt sich vom Wissen, womit wir dabei eigentlich umgehen. Das „Wie" wird von dem „Was" und dem „Warum" epistemisch dissoziiert. In diesem intellektuell „verfügen zu  können,  ohne auch verstehen zu müssen", ist eine Grundform des Mechanischen verkörpert; es ist die Grundfigur eines technisch mediatisierten Tuns. Mit dein Kali ül findet sie Eingang in unser geistiges Tun.
+IV. Mathematik und Philosophie: Die Ersetzung von Wahrheit durch Richtigkeit
+Daß die rationalistische Philosophie geprägt sei vom Vorbild der Mathematik, ist ein Gemeinplatz; ein Gemeinplatz ist es auch, daß das, worin die Mathematik zum Leitbild avancierte, ihre Idee eines axiomatisch-deduktiven Theorienaufbaues gewesen sei. Aber ist das mathematische  Theoriertide ttl  tatsächlich der  Angelpunkt,  über den sich eine Beeinflussung von Mathematik und rationalistischer Philosophie im 17. Jahrhundert vollzieht'? Die idee, das axioniatisch-deduktive Argumentationsgerüst exemplarisch werden zu  lassen  tür jedweden Aufbau einer wissenschaftlichen Theorie, ist <„erade heine spezilisch neuzeitliche Idee, sondern wird schon in Aristoteles' Zweiter Analytih cntlaltet. Und alle hier I ursorisch rezipierten mathematischen und rcchncrischen Innovationen betreffen nicht den Aufbau einer mathematisclicn Theorie, sondern stellen Neuerungen der mathematischen  Proble»tliixtot,kxfecltrtii.  dar. Die Vermutung drängt sich auf, daß die Mathematik der rtitionalistischen Erhcnntnistheorie vorbildlich geworden ist <i erade als eine Strategie des operativen Symbolgebrauches.
+gungen.
+V. Leibnizens „blinde oder symbolische Erkenntnis": Die Operationalisierung des Erkennens und ihr Preis Leibniz unterscheidet zwischen einer intuitiven und einer symbolischen Form des Erkennens — mit der Pointe allerdings, daß die den Menschen einzig angemessene I.onn des Erkennens die symbolische Erkenntnis ist.'4 Nur Gottes Auge bieten die Gegenstände sich in der Fülle ihrer Merkmale unmittelbar dar. Der Metisch — mit seinem bloß endlichen Erkenntnisvermögen — ist angewiesen auf die Vergegenwärtigung je einzelner Merkmale von Gegenständen. Das aber geschieht in Gestalt symbolischer Repräsentationen. Für Leibniz konvergieren also Erkennbarkeit und Repräsentierbarkeit. Klären wir auf, wie das zu verstehen ist.
+Anders als für John Locke Ls haben für Leibniz die Zeichen nicht bloß mnemotechnische und kommunikative Aufgaben; vielmehr können wir gar nicht anders denken denn im Medium der Zeichen.'6 Dies ist nicht psychologisch mißzuverstehen: Nicht um mentale Repräsentationen ist es Leibniz zu tun; vielmehr geht es um das externalisierte Umgehen mit handgreiflichen Symbolen. Dafür aber ist der mathematische Zeichengebrauch paradigmatisch, wird
+14 Leibniz  19(i(i.
+l5 Locke l<163, 162.
+16 Hobbcs stellt in,.Dc Corpore" fest, daü die Zeichen der Erinnerung und der Verständigung dienen. Locke gelangt in seinem .,Essay" zu der Auffassung, daU die Sprache zur Mitteilung von Gedanken unabdingbar sei. Doch ob die Zeichen nun eine mnemotechnische <<der eine kommunikative l.uiik(ion zu crlüllcn haben: Das Denken selbst wird von Hobbes und Locke als ein intrinsischer, rcichenunabhängiger, mentaler Vorgang konzipiert, dessen Resultate erst der Vermittlung durch Zeichen bedurlen. Leibniz setzt die Rolle der Zeichen radikaler an: Wenn er feststellt, daU „ratiocinatio omnis in uvu characterum constitit", so ist damit behauptet. dag sich das Denken überhuupt nicht anders denn im Medium der Zeichen realisieren kann. Dazu: Krämer 1992, 225f.
+13 Kramer INS.
+ll8
+S Y l < I I . I . I < K R A t<11< I<
+in der Arithmetik und Algebra doch das Umgehen tnit den Gegenständen zurückgeführt auf ein Umgehen mit den Zeichen tür die Gegenstände.' Die  Exteriorisierung geistiger Leistungen stößt im flüchtigen Medium der Lautsprache auf Grenzen. Denn die Zeichen müssen nicht nur über einen sinnlich wahrnehmbaren, sondern zugleich auch über einen fixierbaren, handgreil'lich manipulierbaren Körper verl'ügcn. Solche Materialitiit der Zeichen verbürgt erst die Schrift, eine Schrift allerdings, die — anders als die phonetischc Schrift — auf Begriffe, also kognitive Gegenstände Bezu< nimmt und mit diesen zugleich auch operiert, somit als ein Kalkül organisiert ist. Dabei hat Leibniz nicht nur eine Vielzahl mathematischer und logischer Kalküle hinterlassen, sondern gelangt auch erstmals zum Begriff des Kalküls.'" Entscheidend ist dabei seine Einsicht, daß die Konstruktion des Kalküls von seiner Interpretation wohl zu unterscheiden sei. Die Idee der interpretationsfreien kalkülisierten Prozedur gewinnt in verschiedenen Äußerungen Leibnizens Profil. Seine reifsten logischen Kalküle sind intensional, extensional und modal interpretierbar.t~ Wichtiger noch ist Leibnizens Projekt einer rein syntaktischen Kombinatorik, einer „ars combinatoria", für die eine Variabilität der Interpretationsbereiche sichergestellt ist: Werden die Variationcn, Pe t.tt>uttttionen und Kombinationen mit den Variablenzeichen al» Operationen tnit Zahlen und Größen interpretiert, ergibt sich Algebra; werden sie als Operationen mit Punkten gedeutet, entsteht Geometrie; werden sie als Terme gedeutet, resultiert formale Logik. ü
+Im Kalkül werden die Zeichen autark gegenüber den möglichen Gegenständen ihrer Referenz. Dies aber ist kein Glasperlenspiel, mithin kein Selbstzweck, sondern die epistemologische Grundlage für einen Kunstgriff, den zu praktizieren der Sinn jedweder Form kalkülisierten Denkens ist. Ein kalkülisierter Zeichenausdruck kann in einer zweifachen Perspektive thematisiert werden: Als Symbolkonfiguration nimmt er eine gewisse Stelle in Raum und Zeit ein und ist schematisch „bearbeitbar" wie andere raum-zeitlich lokalisierbare Dinge auch. Als interpretierbarer Ausdruck repräsentiert die Symbolkonfiguration einen Satz, der eine extrasymbolische Bedeutung hat wie andere
+Kalküle als Repräsentation
+Den Dingstatus proliliert Leibniz, wenn er betont, daß die Zeichen über
+eine fühlbare („ sensible",
+„grossier"zt), über eine handgreifliche („palpa­
+bile"äz) Natur verfügen müssen. Doch um die Sicherung des Satzstatus geht es,
+wenn Leibniz betont, daß die „formulae" des Kalküls zu „repraesentationes"
+werden, keine bloßen Musterbilder bleiben, sondern uns etwas zu sagen haben.
+Der Kunstgrill' des kalkülisierten Erkenntnisverfahrens besteht nun darin, daß
+geistige Tiifii I ei ten, die Be;ug»elvnen au
+f fiert Sut<sfafus der Zei chert, zurürl.­
+geführf tver<leri liirtttert au
+f Operationen, rlie nur noch ße-ug rteltmert au
+f dert
+Dingstufus der Zeichen.-'-'  Wo das gelingt, sind „palpabilia ... veritatis crite­
+ria",
+„handgreifliche Wahrheitskriterien" za etabliert, kraft derer der Geist ein
+mechanisches Lenkungsmittel besitzt, einen Ariadnefaden des Denkens, kraft
+dessen er entlastet ist von den Mühen der Interpretation. Leibniz tauft diese
+Methodik „cogitatio caeca vel symbolica" — „blinde oder symbolische Erkennt­
+nis":z~ Beim Umgehen mit den Symbolen haben wir nicht mehr darauf zu
+hören, was die Symbole uns zu sagen haben, und nicht mehr darauf zu sehen,
+wofür die Symbole tatsächlich stehen.
+Daß Symbolisierung konstitutiv ist für das wissenschaftliche Erkennen, birgt
+also eine folgenreiche Umkehrung: Nicht mehr gehen die Gegenstände den
+Symbolen ontologisch voraus, vielmehr determinieren die Eigenstrukturen der
+symbolischen Systeme, welche Merkmale wir den Gegenständen überhaupt
+zusprechen können. Daß Kalküle eine Geistestechnologie sind, gilt also in
+einem durchaus buchstäblichen Sinne: Die Symbole bilden das, was sie sym­
+bolisieren, nicht einfach ab, sondern stellen es auch her. Klären wir auf, wie
+das gemeint ist.
+Fast schon ein Getneinplatz der Leibnizliteratur ist es, daß Leibniz das Ver­
+hältnis von Symbol und Gegenstand gewonnen habe am Vorbild der mathema­
+tischen Abbildrelationzu — eine Annahme, die impliziert, daß es Gegenstände
+gebe, die den Status von Urbildern haben und Zeichen, die in die Funktion von
+Abbildern rücken.z~ Doch diese Sicht ist revisionsbedürftig: Warum das so ist.
+kann hier nur kursorisch rekapituliert werden. Im Kern geht es darum, daß eine
+mathematische Abbildbeziehung ein externes Projektionszentrum voraussetzt.
+einen Standpunkt  außerhalb  der Abbildrelation, von dem her das „constans ...
+l l9
+Sätze auch.
+l 7 Operiert wird „nur auf dem Papier und fiilglich an den Charakteren . ..  wclchc di«sache  darstellen, und nicht (an) der Sache selbst". In der Mathematik gelien „die Beweise und Proben . .. nicht fur die Sache selbst, sondern für die Charaktere, die wir an die Stelle der Sachen gesetzt Itabcn", Lcttuiir
+2 I Leibniz l<tf<5. Vll 125.
+22 Leibniz 1903, 176.
+23 Kräincr 19<)2. Za5.
+24 Leibniz 1<tf<(k !te.
+25 Leibniz lV(<tu 25.
+26 So Gurwitsch lü74, 37; Kutstad l977, 7S.
+27 Stiegler l972
+l903, l5-t.
+ltt MtttclstratVSchroeder-Heister t9tt6.
+t9 Dazu: Kauppi i960, lglft'.; Poser i96<t, 49f.; Rescher l954.
+20 Leibniz 1903, 53t.
+nimmt.35
+120
+lex relationum", das Zuordnungsgesetz überhaupt erst erlassen werden kann.-'" Ein solcher Standpunkt aber ist der epistemologischen Stellung des Menschen, der keinen symbolfreien Zugang zur Welt der Gegenstände hat, gerade  verwehrt. Die Folge  ist,  daß die duale mathematische Abbildbeziehung,  sobald sie als Erkenntnisrelation genutzt wird, die „expressio" sich also zur „repraesentatio" transformiert, sich zu einer dreigliedrigen Relation erweitert: Zur Beziehung zwischen „res", „idea" bzw. „notio" und „signum".' Gegenstände jener Zeichen, die wir beim Denken gebrauchen, sind daher nicht die Sachen selbst, sondern die Ideen bzw. Begriffe. Etwas zu erkennen heißt dann, die Idee einer Sache zu haben, also zu ihrem Begriff zu gelangen; dies aber gelingt nur, sofern wir die Sache mit Hilfe von Zeichen darstellen.-"' Doch dann entsteht ein Problem: Wie sind die richtigen Darstellungen von falschen, von chimärischen Repräsentationen zu unterscheiden? Denn dal3 wir uns mit Zeichen auf Gegenstände beziehen können, heif3t nicht schon — wie das Beispiel der „größten Zahl" zeigt3' —, daß diese Gegenstände auch existieren. Als Garant solcher Existenz führt Leibniz nun sogenannte „Realdefinitionen" bzw. „kausale Definitionen"3z ein: Mit ihnen wird ein Gegenstand durch sein Erzeugungsverlahren definiert.33 Durch ein Erzcugungsverlahren allerdings, das sich nicht — wie von den Leibnizinterpreten fast ausnahmslos angenommen wird3a — auf die Gegenstände selbst, vielmehr auf die Zeichen für die Gcoenstände bezieht. Daß etwa der Begriff „größte Zahl" kontradiktorisch sei, ihtn also keine Idee und damit auch keine Sache entspreche, zeigt Leibniz, indem er auf das kalkülisierte Verfahren zur Generierung der Zahlzeichen Bezug Beispiele von Realdefinitionen, die Herstellungsverfahren für Zeichen von
+Gegenständen sind, lassen sich in Leibnizens CEuvre zahlreich finden: bei der Bildung unendlicher Reihen und Folgen oder bei seinem Infinitesimalkalkül. Worauf es hier nur ankommt, ist, dal3 zum Kriterium dafür, ob cincr symbolisch«n Repräsentation ein möglicher Gegenstand entspricht, das F;iktuin wird,
+-') Uninittclharc
+Svnii.ki:. KRAstt:.tt
+g
+Literatur
+Kalküle als Repräsentation
+12l
+ob ein symbolischer Ausdruck nach gewissen Vorschriften regelgeleitet zu erzeugen ist. Der Ort solcher regelgeleiteten Produktion der Zeichen ist der Kalkül. Damit wird für Leibniz die Kalkülisierbarkeit von Zeichenausdrücken zum Kriterium der Referenz und damit der möglichen Existenz von Gegenständen des Erkennens. Leibniz hat damit die im neuzeitlichen mathematischen Denken verwurzelte fundierende Rolle des operativen Symbolgebrauches zum Ideal auch der außermathematischen Erkenntnis stilisiert. So kann Leibniz der forcierten llluminationsrhetorik der Autklärung das Bild der „blinden oder symbolischen Erkenntnis" entgegenstellen: Mit der Möglichkeit, Wahrheit auf Richtigkeit zurückzuführen, kompensiert die Geistestechnik der operativen Schrift die natürlichen Schranken menschlicher Vernunft. Allerdings um einen Preis, den Leibniz in seinen diffizilen Erörterungen über formale Identität akzentuiert: Alles, was wirklich existiert, ist individuell, die Gegenstände aber, die als Referenzgegenstände kalkülisierter Zeichenausdrücke eingeführt werden, verfügen über eine ausschließlich formale Identität, sind also ideale und abstrakte Konstrukte des Geistes. Daher können wir uns mit kalkülisierten Erkenntnisverfahren nicht mehr auf das, was wirklich existiert, also auf die wirklichen Begebenheiten in der Welt beziehen, sondern nur noch auf die Modelle von der Welt, d. h. aber: auf Zeichen.36 Das Ideal einer vollständig kalkülisierten Wissenschaft wird erkauft mit dem Verzicht auf die Erkenntnis dessen, was wirklich existiert.
+Zg Leibniz 1903, 15.
+39 Vgl. Heinekamp 1976, 526f.; Burkhardt 1980, 180; Poser 1979, 312.
+30 Leibniz 1965, VII, 263.
+31 Leibniz 1966, I, 36.
+3"
+„Kausaldetinition" ist hier nicht physikalisch migzuvcrstehcn, sondern von Lcibnir. ausschlic(tlich
+im konstruktiven Sinne gemeint (Gurwitsch 1974, 66): Etwas kausal hzw. real zu dcfinicrcn, hciÜt
+eilt Verfahren zu seiner Erzeugung anzugehen.
+„.. dcmonstrari taliuin r«rum possihilitatcm. qu»tics
+osicnditur modus eas generandi vel producendi", Leibniz 1965, I. 3 13.
+33 Leibniz 1965, Vll, 29zk
+34 Bclaval 1969, 162; Gurwitsch 1974, 57ff.
+35 Leil»iz,)965 V,3<7.
+3. Aull. 1977. Hildesheim I — 87).
+Belaval, Y (1960): Leibniz' critique de Descartes. Paris. Boole, Gcorgc (1854): An investigation of the laws of thought on which are founded the mathematical theorics of logic and probabilities. London (Nachdr. New York 1958). Burkhardt, Hans (1980): Logik und Seimotik in der Philosophie von Leibniz. München. Descartes, Rcni ( I')81): Gcoinetrie. Dtsch. hrsg. v. L. Schlesinger (Repr. d. 2. Aull. Leip ing 1933). Darmstadt (Irre (I'.uvres. 1'.d. C. Adam u. P. Tannery, Pari~ 1897 — 1913, Bd. Vl, 367 — 485). Frege. Gottlob (1879): Begriffsschnlt, eine der arithmetischen nachgebildete Formclsltrache des reinen Denkens. Halle a. d. S. (repr. in: G. I'rege, Begriffschrift und andere Aufsätze. Ed. Ignacm Angelclli, Gurwitsch, Aron (1974): Leibniz. Philosophie des Panlogismus. Berlin, New York.
+Heinekamp, Albrecht (1976): Sprache und Wirklichkeit bei Leibniz. In: Hermann Parret (ed.). History of Linguistic Thought and Contemporary Linguistics. Berlin, 5)8 — 570. Hobbes,  Thomas (1839): The English Works of Thomas Hobbes. Ed. William Molesworth. London. Kauppi, Raoul (1960): Über die Leibnizschc Logik. Mit besonderer Berücksichtigung des Prohlinns der Intension und Extension. Acta Philosophica Fennica I.asc.  XII.  Helsinki.
+36 Krämer 19') I. 3 81 f.
+Wiesbaden.
+Nciv York.
+Abriü. Darmstadt.
+46 (H. 2), 224 — 237.
+28 (H. 2), 117 — 146.
+Hildesheim 1961). Scientia Verlag). Bd. Il.
+C. I. Gerhardt. Hannover.
+l22
+Klein. Jacob (1936): Die gnechische Logistik und die Entwicklung der Algebru. Quellen und Stud ien zur Geschichte d. Math. u. Phys. 3, H. I, 18 — 105 u. H. 2, 122 — 235. Berlin. Kramer. Sybille (1988): Symbolische Maschinen. Dic Gcschichtc der Iiormalisicrung in histi>rischc»i Krümcr. Sybille (1989): Über das Verhültnis von Algebra und Gcomc(rie in Descartes ..G alon>ütric". Philosophia naturalis 26 (H. 2). 117-146. Kriim«r, Sybille (19) la): Berechenbare Vernunft. Kalkul und Rationalismus im 17. Jahrhundert. Berlin. Ki;iii>er, Sybillc ( li)91b): Zur Bcgrundung des Infinitcsinialkalkuls durch Lcihni ic Philosophia n;>tur >f>v Krüiner, Sybille (1992): Symbolische Erkenntnis bei Leibniz. Zeitschntt für philosophischc Forschung Kulstad, Marc (1977): Leibniz's Conception of Expression. Studia Leibnitiana IX ( I ), 55-76. Leibniz. Goufried W. (1846): Histona et Origino calculi d itferentiulius a GG. Leibniz conscripta. Ed. Leibniz. Gnu(ried W. (1960): Die Leibniz-Handschriften der Kiiniglichcn ollbntlichen Bibliothek zu
+Hannover. Ed. E. Bodemann. Hannover 1889 (rcpr. Hildcshcim). LI'ihniz. Gnu(ried W. ( I')65): Die philosophischen Schriften. Ld. C. I. Gcrhardt. Vll Bdc., Berlin 187S — 1890 (repr. I lildesheim).
+Leibniz. Gottfried W. ( Ii)66). Betrachtungen uber die Lrkcnntnis, die Wahi he>> und die Ideen. In'  Ixnbliiz.  Hauptscfiriltcll zu>' Gfullillegullg iler Phih>sophie. )lamburg, Bd. I, 3. Aull.. — 2'). Leibniz, Goufried W. (1903): Opuscules et fragments inidits de Leibniz Ld. L. Couturat. I'aris (rcpr. Locke, John (1963): Essay Concerning Human Understanding. In: The Works. 10 Vols. Aalen (rcpr. Mittclstraü. Jürgen/Schroeder-Heister, Peter (1986): Zeichen, Kalkül, Wahrschcinli«hkcit. Llcmcntc einer mathesis universalis bei Leibniz. In: H. Stachowiak (Hrsg.), Pragmatik. Handbuch pragmatischen Denkens I. Hamburg, 392-414. Poser. Hans (1969): Zur Theorie der Modalbegriffe bei G. W. Leibniz. Studia Leibnitiana Suppl. Vl. Poser, Hans (1979): Signum, notio und idea: Elemente der Leibnizschen Zeichentheorie. Zeitschnlt für Semiotik I, 309 — 324.
+Rcvchcr.  Niklas (  19S4): Leibniz's Interpretation of His Logical Calculi.  Journal of Symbol ical Logic I '), Stie ler, K. (1971): Der Begriff des Isomorphismus und der Darstellung in der Metaphys ik von Lc>hniz. Studia Leibmtiana Suppl. XV. Teil 4, 173 — 185. Tropfke, Johann (1980): Geschichte der Elementarmathematik, Bd. I: Aritlunetik und Algebra, vollstandig neu bearb. v. K. Vogel, K. Reich und H. Gencke. Berlin. Victii, Frungois (1646): Opera mathemutica. Ed. Fr. v. Schooten. Leiden (Naclulruck H>ldeshein> 1970),
+Svntt.t.t:. Knastiig
+I — 13.
+Bd. I. I — 12.
