@@ -1,6 +1,6 @@
 {
   "name": "oc-paper-storage",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "",
   "repository": "github:StudioProcess/oc-paper-storage",
   "engines": {
@@ -10,16 +10,15 @@
   "scripts": {
     "start": "browser-sync . --port 8080 --no-notify",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "reinstall": "rm -rf node_modules && npm install"
+    "reinstall": "npm ci"
   },
   "keywords": [],
   "author": "Process Studio <contact@process.studio> (https://process.studio)",
   "license": "AGPL-3.0",
   "dependencies": {
-    "three": "^0.95.0",
-    "vue": "^2.5.17"
+    "vue": "^2.6.10"
   },
   "devDependencies": {
-    "browser-sync": "^2.24.6"
+    "browser-sync": "^2.26.7"
   }
 }
