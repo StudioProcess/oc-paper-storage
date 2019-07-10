@@ -21,6 +21,8 @@ export function encode(buf, params) {
   console.log(`${w}x${h} px`);
   console.log(`${Math.ceil(w/300*25.4)} x ${Math.ceil(h/300*25.4)} mm @ 300 ppi`);
   
+  let stats = { min: 255, max: 0, avg: 0 };
+  
   for (let i=0; i<arr.length; i++) {
     let g = arr[i]; // gray value
     // console.log(g);
@@ -28,6 +30,10 @@ export function encode(buf, params) {
     img.data[ i*4 + 1 ] = g;
     img.data[ i*4 + 2 ] = g;
     img.data[ i*4 + 3 ] = 255;
+    
+    if (g < stats.min) stats.min = g;
+    if (g > stats.max) stats.max = g;
+    stats.avg = (stats.avg * (i) + g) / (i+1);
     
     // img.data[i*4+0] = 255-g;
     // img.data[i*4+1] = 255-g;
@@ -40,11 +46,17 @@ export function encode(buf, params) {
     // img.data[i*4+3] = 255;
   }
 
-  return img;
+  return {
+    img,
+    bytes: arr.length,
+    width: w,
+    height: h,
+    stats,
+  };
 }
 
 export function img2svg(img) {
-  function makePixel(x, y, r, g, b, a) { return `<rect fill="rgba(${r},${g},${b},${a/255})" x="${x}" y="${y}" width="1" height="1" />`; }
+  function makePixel(x, y, r, g, b, a) { return `<rect fill="rgb(${r},${g},${b},${a/255})" x="${x}" y="${y}" width="1" height="1" />`; }
   let pixels = '';
   for (let i=0; i<img.width*img.height; i++) {
     pixels += makePixel(

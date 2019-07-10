@@ -14,9 +14,26 @@
 <body>
   <!-- <script src="node_modules/three/build/three.js"></script>
   <script src="node_modules/three/examples/js/controls/OrbitControls.js"></script> -->
-  
   <script type="module">
     import * as lib from './lib.js';
+    import * as dat from './node_modules/dat.gui/build/dat.gui.module.js';
+    
+    const params = {
+      width: 1000,
+      invert: false,
+    };
+    
+    const gui = new dat.GUI();
+    // gui.add(params, 'width');
+    // gui.add(params, 'invert');
+    console.log(gui);
+    
+    let nfo = document.createElement('li');
+    nfo.style.height = 'auto';
+    nfo.style.lineHeight = 2;
+    nfo.style.whiteSpace = 'pre-wrap';
+    gui.domElement.querySelector('ul').appendChild(nfo);
+    export function info(text) { nfo.innerHTML = text; }
     
     let files = [
       'data/ocr/Chun_Code_as_Fetish-OCR.txt',
@@ -52,12 +69,14 @@
       return fetch(file)
       .then(res => res.arrayBuffer())
       .then(buf => {
-        img = lib.encode(buf, {sort}); // ImageData
+        let res = lib.encode(buf, {sort});
+        let img = res.img; // ImageData
         var canvas = document.querySelector('canvas');
         canvas.width = img.width;
         canvas.height = img.height;
         let ctx = canvas.getContext('2d');
         ctx.putImageData(img, 0, 0);
+        info(`${file}\n${res.bytes} bytes\n${res.width} x ${res.height}\nmin=${res.stats.min} / max=${res.stats.max} / avg=${Math.floor(res.stats.avg)}`);
       });
     }
   </script>
