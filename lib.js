@@ -1,6 +1,7 @@
 const default_params = {
   width: 1000,
   sort: false,
+  invert: false,
 };
 
 // Encodes bytes (ArrayBuffer) into to an image (ImageData)
@@ -25,6 +26,7 @@ export function encode(buf, params) {
   
   for (let i=0; i<arr.length; i++) {
     let g = arr[i]; // gray value
+    if (params.invert) g = 255-g;
     // console.log(g);
     img.data[ i*4 + 0 ] = g;
     img.data[ i*4 + 1 ] = g;

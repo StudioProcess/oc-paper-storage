@@ -20,13 +20,21 @@
     
     const params = {
       width: 1000,
+      sort: false,
       invert: false,
     };
     
+    const actions = {
+      next: () => { loadIndex(current+1, params) },
+      prev: () => { loadIndex(current-1, params) },
+    };
+    
     const gui = new dat.GUI();
-    // gui.add(params, 'width');
-    // gui.add(params, 'invert');
-    console.log(gui);
+    gui.add(params, 'width', 0).onFinishChange(reload);
+    gui.add(params, 'sort').onFinishChange(reload);
+    gui.add(params, 'invert').onFinishChange(reload);
+    gui.add(actions, 'next');
+    gui.add(actions, 'prev');
     
     let nfo = document.createElement('li');
     nfo.style.height = 'auto';
@@ -43,33 +51,34 @@
     ];
     
     let current = 0;
-    let sort = false;
     let img;
-    loadIndex( current, sort );
+    loadIndex( current, params );
     
     document.addEventListener("keyup", (e) => {
-      if (e.keyCode == 39) { loadIndex(current+1, sort); }
-      else if (e.keyCode == 37) { loadIndex(current-1, sort); }
-      else if (e.key == ' ') { loadIndex(current, !sort); }
+      if (e.keyCode == 39) { actions.next(); }
+      else if (e.keyCode == 37) { actions.next(); }
       else if (e.key == 's') {
         let svgtext = lib.img2svg(img);
         lib.saveSVG(svgtext, 'download.svg');
       }
     });
     
-    function loadIndex( idx, _sort = false ) {
+    function loadIndex( idx, params ) {
       if (idx < 0) idx = 0;
       else if (idx >= files.length) idx = files.length-1;
       current = idx;
-      sort = _sort;
-      loadFile( files[current], sort );
+      loadFile( files[current], params );
     }
     
-    function loadFile( file, sort = false ) {
+    function reload() {
+      loadIndex(current, params);
+    }
+    
+    function loadFile( file, params ) {
       return fetch(file)
       .then(res => res.arrayBuffer())
       .then(buf => {
-        let res = lib.encode(buf, {sort});
+        let res = lib.encode(buf, params);
         let img = res.img; // ImageData
         var canvas = document.querySelector('canvas');
         canvas.width = img.width;
