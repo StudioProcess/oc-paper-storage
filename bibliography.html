@@ -19,9 +19,10 @@
     import * as dat from './node_modules/dat.gui/build/dat.gui.module.js';
     
     const params = {
-      width: 1000,
+      width: 516,
       sort: false,
       invert: false,
+      scale: 0.7086614173,
     };
     
     const actions = {
@@ -58,7 +59,7 @@
       if (e.keyCode == 39) { actions.next(); }
       else if (e.keyCode == 37) { actions.next(); }
       else if (e.key == 's') {
-        let svgtext = lib.img2svg(img);
+        let svgtext = lib.img2svg(img, params.scale);
         lib.saveSVG(svgtext, 'download.svg');
       }
     });
@@ -79,7 +80,7 @@
       .then(res => res.arrayBuffer())
       .then(buf => {
         let res = lib.encode(buf, params);
-        let img = res.img; // ImageData
+        img = res.img; // ImageData
         var canvas = document.querySelector('canvas');
         canvas.width = img.width;
         canvas.height = img.height;

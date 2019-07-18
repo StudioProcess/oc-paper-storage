@@ -57,7 +57,7 @@ export function encode(buf, params) {
   };
 }
 
-export function img2svg(img) {
+export function img2svg(img, scale = 1) {
   function makePixel(x, y, r, g, b, a) { return `<rect fill="rgb(${r},${g},${b},${a/255})" x="${x}" y="${y}" width="1" height="1" />`; }
   let pixels = '';
   for (let i=0; i<img.width*img.height; i++) {
@@ -70,7 +70,7 @@ export function img2svg(img) {
       img.data[ i*4 + 3 ]
     ) + '\n';
   }
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${img.width} ${img.height}" shape-rendering="crispEdges">\n${pixels}</svg>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${img.width} ${img.height}" shape-rendering="crispEdges">\n<g transform="scale(${scale})">\n${pixels}</g>\n</svg>`;
 }
 
 
